@@ -156,16 +156,6 @@ frameyard-backend
 * User schema finalized
 * Database migrations applied successfully
 
-### APIs Completed
-
-POST /auth/register
-
-POST /auth/login
-
-GET /auth/profile
-
-PUT /auth/profile
-
 ### Security Features
 
 * Email Verification
@@ -174,21 +164,95 @@ PUT /auth/profile
 * User Validation
 * Duplicate User Prevention
 
-### Pending Authentication Features
-
-POST /auth/forgot-password
-
-POST /auth/reset-password
-
-### Next Module
-
-Product Module
-
-* Product Schema Design
-* Product CRUD APIs
-* Product Images
-* Product Categories
-* Product Variants
-
 ----------
+### Day 3
+
+### Product Management
+
+* Create Product
+* Get All Products
+* Get Product By ID
+* Update Product
+
+### Product Variants
+
+* Create Variant
+* Update Variant
+
+Variant Properties:
+
+* Frame Size
+* Border Option
+* Glass Option
+* Price
+* Offer Price
+* Stock Quantity
+
+### Shopping Cart
+
+* Add Item to Cart
+* Get Cart
+* Update Cart Quantity
+* Remove Cart Item
+
+### Order Management
+
+#### Customer
+
+* Place Order
+* View My Orders
+* View Order Details
+
+#### Admin
+
+* View All Orders
+* Update Order Status
+
+Supported Statuses:
+
+* PENDING
+* CONFIRMED
+* PROCESSING
+* SHIPPED
+* DELIVERED
+* CANCELLED
+
+---
+
+## Database Models
+
+* User
+* Product
+* ProductVariant
+* ProductImage
+* Cart
+* CartItem
+* Order
+* OrderItem
+
+---
+
+## Security
+
+* Authentication Middleware
+* Admin Authorization Middleware
+* Customer Authorization Middleware
+* CORS Enabled
+* Protected API Endpoints
+* Global 404 Handling
+
+---
+
+## Planned Features Todo
+
+* Product Image Upload (AWS S3)
+* Forgot Password
+* Reset Password
+* Razorpay Payment Integration
+* Product Delete APIs
+* Variant Delete APIs
+* Admin Dashboard
+* Customer Frontend
+
+--------------
 
