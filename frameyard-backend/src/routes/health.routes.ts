@@ -5,7 +5,7 @@ const router = Router();
 router.get("/", (req, res) => {
   res.status(200).json({
     success: true,
-    message: "FrameYard API Running",
+    message: "FrameYard backend API Running",
   });
 });
 

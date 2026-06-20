@@ -8,8 +8,8 @@ const router = Router();
 
 router.post("/",authenticateUser,authorizeCustomer,checkout);
 router.get("/",authenticateUser,authorizeCustomer,fetchMyOrders);
-router.get("/:id",authenticateUser, authorizeCustomer,fetchOrderById);
 router.get("/admin",authenticateUser,authorizeAdmin,fetchAllOrders);
 router.patch("/admin/:id/status",authenticateUser,authorizeAdmin,changeOrderStatus);
+router.get("/:id",authenticateUser, authorizeCustomer,fetchOrderById);
 
 export default router;
